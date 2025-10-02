@@ -39,8 +39,8 @@ const Contact = () => {
 
   // Replace with your actual contact details and social links
   const contactDetails = [
-    { icon: '📧', label: 'Email', value: 'nishantnirav@example.com', link: 'mailto:nishantnirav@example.com' },
-    { icon: '📞', label: 'Phone', value: '+91 62014 78589', link: 'tel:+916201478589' },
+    { icon: '📧', label: 'Email', value: 'nishantnirava@gmail.com', link: 'mailto:nishantnirava@gmail.com' },
+    // { icon: '📞', label: 'Phone', value: '+91 62014 78589', link: 'tel:+916201478589' },
     { icon: '📍', label: 'Location', value: 'Pune, India', link: 'https://maps.google.com/?q=Pune' },
   ];
 
