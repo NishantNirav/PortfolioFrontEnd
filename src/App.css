@@ -1,0 +1,66 @@
+/* Import Google Font if you're using a specific one */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+/* GLOBAL RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050f1f; /* Very Dark Blue */
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.app-container {
+  /* Set the main background gradient for the hero section */
+  background: linear-gradient(135deg, #0b1f3c 0%, #1a3a5c 100%);
+  min-height: calc(100vh - 80px); /* Adjust based on header height */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background Abstract Shapes (Simulating the design's curves) */
+.app-container::before,
+.app-container::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.app-container::before {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(#3e239e, #1a3a5c); /* Purple to Blue */
+    top: -200px;
+    left: -300px;
+}
+
+.app-container::after {
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(#00c9ff, #0b1f3c); /* Light Blue to Dark Blue */
+    bottom: -400px;
+    right: -400px;
+}
+
+
+/* MAIN LAYOUT */
+.hero-section {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  position: relative;
+  z-index: 1; /* Keep content above background shapes */
+}

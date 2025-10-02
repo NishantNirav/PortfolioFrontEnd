@@ -1,0 +1,71 @@
+.hero-content {
+  flex: 3; /* Takes up more space on the left */
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+}
+
+.name-intro {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.highlight {
+  color: #64ffda; /* Bright Teal */
+}
+
+.role {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #a0a0a0;
+  margin-bottom: 2.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cta-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-button.primary {
+  background-color: #64ffda; /* Teal */
+  color: #0b1f3c; /* Dark Navy Text */
+  border: 2px solid #64ffda;
+}
+
+.cta-button.primary:hover {
+  background-color: #4CAF50; /* A nice green on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(100, 255, 218, 0.4);
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: #64ffda; /* Teal Text */
+  border: 2px solid #64ffda;
+}
+
+.cta-button.secondary:hover {
+  background-color: #1a3a5c; /* Lightly shaded background on hover */
+  color: #ffffff;
+}

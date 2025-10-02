@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #0b1f3c; /* Dark Navy Blue */
+  color: #ffffff;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4CAF50; /* A touch of bright green for emphasis */
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #64ffda; /* Bright Teal for hover effect */
+}

@@ -1,0 +1,171 @@
+.about-section {
+  padding: 6rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  background-color: #050f1f; /* Continuation of the dark background */
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.about-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #64ffda; /* Teal accent */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-container {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* --- Left Side: Narrative --- */
+.about-narrative {
+  flex: 3;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.about-greeting {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #64ffda; /* Teal highlight */
+  margin-bottom: 1.5rem;
+}
+
+.about-narrative p {
+  margin-bottom: 1.5rem;
+  color: #b0b0b0;
+}
+
+.about-narrative strong {
+    color: #ffffff;
+}
+
+.quote {
+  font-style: italic;
+  border-left: 4px solid #4CAF50; /* Green accent for quote */
+  padding-left: 15px;
+  margin-top: 2rem;
+  color: #a0a0a0;
+}
+
+/* --- Right Side: Timeline --- */
+.about-timeline {
+  flex: 2;
+}
+
+.timeline-header {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 20px;
+}
+
+/* The main vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #1a3a5c; /* Darker blue line */
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+/* The circular dot */
+.timeline-dot {
+  position: absolute;
+  left: -9px; /* Adjust based on line position (0) and dot size */
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #64ffda; /* Teal dot */
+  border: 3px solid #050f1f; /* Dark background border */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding-left: 20px;
+}
+
+.timeline-year {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4CAF50; /* Green highlight for year */
+  margin-bottom: 5px;
+}
+
+.timeline-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+/* --- Skills Expertise Section --- */
+.skills-expertise {
+  margin-top: 4rem;
+}
+
+.skills-header {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill-chip {
+  background-color: #1a3a5c; /* Medium Dark Blue */
+  color: #64ffda; /* Teal Text */
+  padding: 0.7rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #64ffda;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skill-chip:hover {
+  background-color: #64ffda; /* Hover effect */
+  color: #0b1f3c;
+  transform: translateY(-2px);
+  cursor: default;
+}
