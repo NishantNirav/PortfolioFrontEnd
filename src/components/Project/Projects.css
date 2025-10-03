@@ -74,6 +74,7 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   opacity: 60%;
+  
 }
 .project-type-chip:hover{
   opacity: 100%;
@@ -149,3 +150,16 @@
   background-color: #1a3a5c;
   color: #ffffff;
 }
+
+@media (max-width: 600px) {
+  .projects-section{
+    max-width: 100vw;
+    overflow-x: hidden;
+    /* background-color: white; */
+  }
+  .project-card{
+    width: 90%;
+    /* background-color: orange; */
+    text-align: left;
+  }
+  }

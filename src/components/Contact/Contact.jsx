@@ -39,7 +39,7 @@ const Contact = () => {
 
   // Replace with your actual contact details and social links
   const contactDetails = [
-    { icon: '📧', label: 'Email', value: 'nishantnirava@gmail.com', link: 'mailto:nishantnirava@gmail.com' },
+    { icon: '📧', label: 'Email', value: 'nishantnirava@ gmail.com', link: 'mailto:nishantnirava@gmail.com' },
     { icon: '📍', label: 'Location', value: 'Pune, India', link: 'https://maps.google.com/?q=Pune' },
   ];
 
@@ -62,7 +62,7 @@ const Contact = () => {
           {contactDetails.map((detail, index) => (
             <div key={index} className="detail-item">
               <span className="detail-icon">{detail.icon}</span>
-              <div>
+              <div className='detail-label-value-container'>
                 <p className="detail-label">{detail.label}</p>
                 <a href={detail.link} className="detail-value">{detail.value}</a>
               </div>

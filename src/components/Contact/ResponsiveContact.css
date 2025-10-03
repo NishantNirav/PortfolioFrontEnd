@@ -5,14 +5,21 @@
         align-items: center;
         justify-content: center;
     }
-    .contact-form-panel{
-        max-width: 100vw;
+    .contact-form-panel,.contact-details-panel{
+        width:100%;
         /* background-color: blue; */
+
+
     }
 
+    .detail-label-value-container{
+        max-width: 90%;
+        word-wrap: break-word;
+    }
     .contact-content-wrapper {
         flex-direction: column;
         flex-wrap: wrap;
+        max-width: 90%;
     }
 
     .contact-form {

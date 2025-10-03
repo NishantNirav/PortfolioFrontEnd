@@ -34,6 +34,8 @@
   padding: 2.5rem;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  /* overflow-wrap: anywhere; */
+  /* overflow: hidden; */
 }
 
 .panel-header {
@@ -49,7 +51,12 @@
   align-items: center;
   margin-bottom: 2rem;
   gap: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
+
 }
+
 
 .detail-icon {
   font-size: 1.8rem;
@@ -67,8 +74,14 @@
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
-}
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 
+}
+.detail-value a{
+overflow-wrap: break-word;
+word-wrap: break-word;
+}
 .detail-value:hover {
   color: #64ffda;
 }
