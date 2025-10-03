@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProfileCard.css';
+import './ResponsiveProfileCard.css';
 // import ac from ''
 // 🎯 Data Structure for your Skill Images
 const skillIconsData = [

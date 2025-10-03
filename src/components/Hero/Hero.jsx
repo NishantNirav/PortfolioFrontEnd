@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import './ResponsiveHero.css';
 import TypedAnimation from '../TypedAnimation/TypedAnimation';
 const RESUME_URL = '/Nishant_Nirav_CV.pdf';
 const Hero = () => {

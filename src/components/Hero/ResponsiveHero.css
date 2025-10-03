@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  .hero-section{
+    width: 100vw;
+    overflow: hidden;
+    justify-content: center;
+    align-items: start;
+    /* border: 1px solid white; */
+    flex-direction: column-reverse;
+    padding: 5rem 2rem;
+  }
+  .name-intro{
+    font-size: 2rem;
+  }
+  .cta-buttons{
+    padding: 0.8rem 0.8rem;
+    font-size: 10px;
+    
+  }
+}

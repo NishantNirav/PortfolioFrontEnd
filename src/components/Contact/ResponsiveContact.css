@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+    .contact-section {
+        max-width: 100vw;
+        overflow-x: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-form-panel{
+        max-width: 100vw;
+        /* background-color: blue; */
+    }
+
+    .contact-content-wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contact-form {
+        grid-gap: 5px;
+        max-width: 100vw;
+        /* background-color: brown; */
+    }
+
+    .form-input,
+    .form-textarea {
+        width: 100%;
+    }
+    
+}

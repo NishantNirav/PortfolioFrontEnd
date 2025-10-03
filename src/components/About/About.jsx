@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import './ResponsiveAboutSection.css';
 
 const About = () => {
   // Define data for the timeline/milestones
@@ -73,7 +74,6 @@ const skillsData = [
     <section id="about" className="about-section">
       <h2 className="about-title">About Me & My Journey</h2>
       <div className="about-container">
-
         {/* Left Side: Personal Narrative */}
         <div className="about-narrative">
           <p className="about-greeting">Hello, I'm Nishant Nirav,</p>
@@ -90,7 +90,6 @@ const skillsData = [
             "Every line of code is an opportunity to improve."
           </p>
         </div>
-
         {/* Right Side: Timeline/Milestones */}
         <div className="about-timeline">
           <h3 className="timeline-header">Key Milestones</h3>

@@ -1,0 +1,129 @@
+.profile-card {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.image-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #64ffda; /* Teal border for the image */
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.5); /* Glowing effect */
+  margin-bottom: 2rem;
+  /* padding-top: 3px; */
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  display: block;
+  ;
+}
+
+.profile-details {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.profile-role {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  margin-bottom: 1rem;
+}
+
+/* --- Skill Icons Row --- */
+
+.skill-icons-row {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1.5rem; 
+  margin-top: 1rem;
+  justify-content: center; 
+  max-width: 400px;
+}
+
+.skill-icon-container {
+  width: 65px; 
+  height: 65px;
+  /* Use a consistent border color since we no longer have individual icon colors in CSS */
+  border: 2px solid #64ffda; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-color: #0b1f3c; /* Dark background inside the circle */
+  cursor: default;
+  overflow: hidden; /* Ensure image doesn't bleed out */
+}
+
+/* 🎯 NEW STYLING FOR THE IMAGE */
+.skill-icon-image {
+    width: 90%; /* Smaller than container to give padding */
+    height: 90%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(100, 255, 218, 0.5)); /* Optional subtle glow */
+    transition: transform 0.3s ease;
+    border: inherit;
+    border-radius: inherit;
+    object-fit: fill;
+}
+
+/* Hover effect on the container */
+.skill-icon-container:hover {
+  background-color: #64ffda; /* Teal background on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(100, 255, 218, 0.4);
+  border-color: #64ffda; 
+}
+
+/* Image scaling on hover */
+.skill-icon-container:hover .skill-icon-image {
+    transform: scale(1.1); /* Make the image slightly larger on hover */
+    filter: none; /* Remove filter on hover for a clean look */
+}
+
+/* --- Mobile Responsiveness (Max-width 600px) --- */
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 2rem 1rem;
+        flex: auto;
+    }
+
+    .image-circle {
+        width: 180px; /* Smaller image */
+        height: 180px;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-name {
+        font-size: 2rem;
+    }
+
+    .profile-role {
+        font-size: 1rem;
+    }
+
+    .skill-icons-row {
+        gap: 0.75rem; /* Reduced gap */
+        max-width: 100%;
+    }
+
+    .skill-icon-container {
+        width: 45px; /* Smaller skill icons */
+        height: 45px;
+    }
+}
