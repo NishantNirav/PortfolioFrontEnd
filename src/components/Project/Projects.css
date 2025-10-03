@@ -155,6 +155,10 @@
   .projects-section{
     max-width: 100vw;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* background-color: white; */
   }
   .project-card{
